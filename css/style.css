@@ -14,7 +14,7 @@ body {
     font-family: "Open Sans", "sans-serif";
     font-weight: 400px;
     background-color: var(--violet);
-    background-image: url(/images/bg-desktop.svg);
+    background-image: url(../images/bg-desktop.svg);
     }
 
 .image {
