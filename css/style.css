@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%)
+}
+
+body {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400px;
+    background-color: var(--violet);
+    background-image: url(/images/bg-desktop.svg);
+    }
+
+.image {
+     margin-top: 15px;
+     padding-left: 40px;
+    }
+    
+.container {
+    width: 88%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.build {
+    color: var(--white);
+    margin-top: -150px;
+    margin-left: 50px;
+    }
+.build h1 {
+    font-family: "Poppins", "sans-serif";
+    font-weight: 600;
+    }
+
+.build p {
+    margin-top: 20px;
+    font-weight: 400px;
+}
+.reg {
+    margin-top: 18px;
+    padding: 10px 50px;
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 170px;
+    }
+
+.reg:hover {
+    background-color: var(--softMagenta);
+    cursor: pointer;
+}
+.reg a:hover {
+    color: var(--white);
+}
+.reg a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 98%;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    color: var(--white);
+    padding-right: 30px;
+    cursor: pointer;
+    }
+
+.fa-brands {
+    margin-right: 15px;
+    margin-bottom: 1px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 7px;
+} 
+
+.fa-brands:hover {
+    background-color: var(--softMagenta);
+   }
+@media only screen and (max-width: 600Px) {
+   
+   
+    .image img {
+        width: 40%;
+        height: auto;
+    }
+
+   .container {
+       display: flex;    
+       flex-direction: column;
+       width: 80%;
+       height: auto;
+       margin-top: 10px;
+    }  
+        
+    .image1 img {
+        width: 98%;
+        height: 80%;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    .build {
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+    } 
+
+    .build p {
+        width: 98%;
+    }
+
+    .reg {
+        margin: auto;
+        margin-top: 20px;
+    }
+ 
+    body {
+        background-image: url(/images/bg-mobile.svg);
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 27px;
+        margin-left: 28px;
+    }
+}
